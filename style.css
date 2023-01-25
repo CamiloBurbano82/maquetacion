@@ -6,12 +6,16 @@
 
 .principal{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
     margin: 15px;
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 15px;
     width: 400px;
     height: 500px;
     overflow: hidden;
@@ -73,6 +77,42 @@
     width: 20%;
     background-color: red;
     border-radius: 5px;
+    border:none;
     padding: 2px;
     color: white;
+}
+
+#img2{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+}
+
+.container .hover{
+    
+    top: 0;
+    background-color: rgb(241, 36, 36);
+    position: absolute;
+    width: 0%;
+    overflow: hidden;
+    opacity: 0.5; border-radius: 10px;
+    left: 0%;
+}
+
+.hover p{
+    color:white;display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:50%;
+    left: 25%;
+}
+
+.container:hover .hover{
+    width: 100%;
+    height: 70%;
 }
